@@ -1,0 +1,121 @@
+/* =========== hero carousel =========== */
+/* header */
+.heading {
+  max-width: 23rem;
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--neutral);
+}
+
+.tagline {
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0;
+}
+
+.sub-headline {
+  margin: 1.8rem 0;
+  color: var(--neutral);
+}
+
+/* accessories */
+.star-doodle {
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  position: absolute;
+  right: .5em;
+  top: 1.8em;
+}
+
+.star-doodle-top {
+  max-width: 2.3rem;
+  rotate: -10deg;
+}
+
+.star-doodle-bottom {
+  max-width: 1.8rem;
+  rotate: 40deg;
+}
+
+.wave-doodle {
+  max-width: 4rem;
+  position: absolute;
+  bottom: -2em;
+  right: 6.5em;
+}
+
+/* cta */
+.btn-cta {
+  font-size: .8rem;
+  font-weight: 700;
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  padding: 10px 24px;
+  border-radius: 20px;
+  transition: all .2s;
+  color: var(--neutral);
+}
+
+.btn-cta:hover {
+  background-color: var(--white);
+}
+
+/* ========== pop up ========== */
+/* card */
+.popup {
+  /* background-color: black; */
+}
+
+.popup-item {
+  background-color: var(--white);
+  position: relative;
+  max-width: fit-content;
+  padding: 40px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+#btn-close {
+  position: absolute;
+  top: .3em;
+  right: .3em;
+  line-height: normal;
+}
+
+/* table */
+.table {
+  max-width: 30rem;
+  margin: 0;
+}
+
+.col-header {
+  text-align: center;
+  color: var(--neutral);
+}
+
+.row-item {
+  text-align: center;
+}
+
+.fa-check {
+  color: var(--primary);
+}
+
+.fa-xmark {
+  color: #bbbbbb;
+}
+
+.btn-order {
+  background-color: var(--secondary);
+  font-size: .8rem;
+  font-weight: 700;
+  border: 1px solid var(--secondary);
+  padding: 8px 15px;
+  border-radius: 25px;
+}
