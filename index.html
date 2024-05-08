@@ -54,92 +54,495 @@
 
   <main>
     <!-- hero carousel -->
-    <div>
-      <div>
-        <p class="tagline">100% SATISFACTION GUARANTEE</p>
-
-        <div class="heading">
-          <div class="star-doodle">
-            <img src="./assets/images/star-doodle.png" class="star-doodle-top" alt="doodle">
-            <img src="./assets/images/star-doodle.png" class="star-doodle-bottom" alt="doodle">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero">
+            <div class="hero-title">
+              <p class="tagline">100% SATISFACTION GUARANTEE</p>
+      
+              <div class="heading">
+                <div class="star-doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-top" alt="doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-bottom" alt="doodle">
+                </div>
+                <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                <img src="./assets/images/zigzag.png" class="wave-doodle" alt="doodle">
+              </div>
+      
+              <p class="sub-headline">
+                We help you find perfect tutor for 1-on-1 lessons.
+                <br>
+                It is completely customized and private.
+              </p>
+              
+              <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+      
+              <div class="popup" id="popup">
+                <div class="popup-item">
+                  <i class="fa-solid fa-xmark fa-lg" id="btn-close" style="color: #303030;"></i>
+      
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Features</h4>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Basic</h4>
+                          <p class="text-price">$5/month</p>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Premium</h4>
+                          <p class="text-price">$15/month</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lorem ipsum</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Consectetur adipiscing</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Suspendisse nec</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Maecenas leo</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae vel</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae augue</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                        </td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+      
+            <div class="hero-image">
+              <div class="collage-container container">
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-1.jpg" class="collage-item round-left" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-2.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-3.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-4.jpg" class="collage-item round-right" alt="person">
+                  </div>
+                </div>
+              </div>
+      
+              <div class="circle-yellow"></div>
+              <div class="circle-grey"></div>
+              <div class="circle-blue"></div>
+      
+              <img src="./assets/images/chat-balloon.png" class="chat-doodle" alt="doodle">
+              <img src="./assets/images/heart-doodle.png" class="heart-doodle" alt="doodle">
+              <img src="./assets/images/up-arrow.png" class="arrow-doodle" alt="doodle">
+            </div>
           </div>
-          <h1 class="headline">Find Your <br> Perfect Tutor</h1>
-          <img src="./assets/images/zigzag.png" class="wave-doodle" alt="doodle">
         </div>
+        <div class="carousel-item">
+          <div class="hero">
+            <div class="hero-image">
+              <div class="collage-container container">
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-1.jpg" class="collage-item round-left" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-2.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-3.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-4.jpg" class="collage-item round-right" alt="person">
+                  </div>
+                </div>
+              </div>
+      
+              <div class="circle-yellow"></div>
+              <div class="circle-grey"></div>
+              <div class="circle-blue"></div>
+      
+              <img src="./assets/images/chat-balloon.png" class="chat-doodle" alt="doodle">
+              <img src="./assets/images/heart-doodle.png" class="heart-doodle" alt="doodle">
+              <img src="./assets/images/up-arrow.png" class="arrow-doodle" alt="doodle">
+            </div>
 
-        <p class="sub-headline">
-          We help you find perfect tutor for 1-on-1 lessons.
-          <br>
-          It is completely customized and private.
-        </p>
-        
-        <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+            <div class="hero-title">
+              <p class="tagline">100% SATISFACTION GUARANTEE</p>
+      
+              <div class="heading">
+                <div class="star-doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-top" alt="doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-bottom" alt="doodle">
+                </div>
+                <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                <img src="./assets/images/zigzag.png" class="wave-doodle" alt="doodle">
+              </div>
+      
+              <p class="sub-headline">
+                We help you find perfect tutor for 1-on-1 lessons.
+                <br>
+                It is completely customized and private.
+              </p>
+              
+              <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+      
+              <div class="popup" id="popup">
+                <div class="popup-item">
+                  <i class="fa-solid fa-xmark fa-lg" id="btn-close" style="color: #303030;"></i>
+      
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Features</h4>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Basic</h4>
+                          <p class="text-price">$5/month</p>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Premium</h4>
+                          <p class="text-price">$15/month</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lorem ipsum</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Consectetur adipiscing</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Suspendisse nec</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Maecenas leo</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae vel</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae augue</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                        </td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero">
+            <div class="hero-title">
+              <p class="tagline">100% SATISFACTION GUARANTEE</p>
+      
+              <div class="heading">
+                <div class="star-doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-top" alt="doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-bottom" alt="doodle">
+                </div>
+                <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                <img src="./assets/images/zigzag.png" class="wave-doodle" alt="doodle">
+              </div>
+      
+              <p class="sub-headline">
+                We help you find perfect tutor for 1-on-1 lessons.
+                <br>
+                It is completely customized and private.
+              </p>
+              
+              <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+      
+              <div class="popup" id="popup">
+                <div class="popup-item">
+                  <i class="fa-solid fa-xmark fa-lg" id="btn-close" style="color: #303030;"></i>
+      
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Features</h4>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Basic</h4>
+                          <p class="text-price">$5/month</p>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Premium</h4>
+                          <p class="text-price">$15/month</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lorem ipsum</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Consectetur adipiscing</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Suspendisse nec</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Maecenas leo</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae vel</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae augue</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                        </td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+      
+            <div class="hero-image">
+              <div class="collage-container container">
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-1.jpg" class="collage-item round-left" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-2.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-3.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-4.jpg" class="collage-item round-right" alt="person">
+                  </div>
+                </div>
+              </div>
+      
+              <div class="circle-yellow"></div>
+              <div class="circle-grey"></div>
+              <div class="circle-blue"></div>
+      
+              <img src="./assets/images/chat-balloon.png" class="chat-doodle" alt="doodle">
+              <img src="./assets/images/heart-doodle.png" class="heart-doodle" alt="doodle">
+              <img src="./assets/images/up-arrow.png" class="arrow-doodle" alt="doodle">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero">
+            <div class="hero-image">
+              <div class="collage-container container">
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-1.jpg" class="collage-item round-left" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-2.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-3.jpg" class="collage-item img-square" alt="person">
+                  </div>
+                  <div class="col">
+                    <img src="./assets/images/hero-picture-4.jpg" class="collage-item round-right" alt="person">
+                  </div>
+                </div>
+              </div>
+      
+              <div class="circle-yellow"></div>
+              <div class="circle-grey"></div>
+              <div class="circle-blue"></div>
+      
+              <img src="./assets/images/chat-balloon.png" class="chat-doodle" alt="doodle">
+              <img src="./assets/images/heart-doodle.png" class="heart-doodle" alt="doodle">
+              <img src="./assets/images/up-arrow.png" class="arrow-doodle" alt="doodle">
+            </div>
 
-        <div class="popup" id="popup">
-          <div class="popup-item">
-            <i class="fa-solid fa-xmark fa-lg" id="btn-close" style="color: #303030;"></i>
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col" class="col-header">
-                    <h4 class="text-col">Features</h4>
-                  </th>
-                  <th scope="col" class="col-header">
-                    <h4 class="text-col">Basic</h4>
-                    <p class="text-price">$5/month</p>
-                  </th>
-                  <th scope="col" class="col-header">
-                    <h4 class="text-col">Premium</h4>
-                    <p class="text-price">$15/month</p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Lorem ipsum</td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td>Consectetur adipiscing</td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td>Suspendisse nec</td>
-                  <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td>Maecenas leo</td>
-                  <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td>Vitae vel</td>
-                  <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td>Vitae augue</td>
-                  <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
-                  <td class="row-item"><i class="fa-solid fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class="row-item">
-                    <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
-                  </td>
-                  <td class="row-item">
-                    <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="hero-title">
+              <p class="tagline">100% SATISFACTION GUARANTEE</p>
+      
+              <div class="heading">
+                <div class="star-doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-top" alt="doodle">
+                  <img src="./assets/images/star-doodle.png" class="star-doodle-bottom" alt="doodle">
+                </div>
+                <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                <img src="./assets/images/zigzag.png" class="wave-doodle" alt="doodle">
+              </div>
+      
+              <p class="sub-headline">
+                We help you find perfect tutor for 1-on-1 lessons.
+                <br>
+                It is completely customized and private.
+              </p>
+              
+              <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+      
+              <div class="popup" id="popup">
+                <div class="popup-item">
+                  <i class="fa-solid fa-xmark fa-lg" id="btn-close" style="color: #303030;"></i>
+      
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Features</h4>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Basic</h4>
+                          <p class="text-price">$5/month</p>
+                        </th>
+                        <th scope="col" class="col-header">
+                          <h4 class="text-col">Premium</h4>
+                          <p class="text-price">$15/month</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lorem ipsum</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Consectetur adipiscing</td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Suspendisse nec</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Maecenas leo</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae vel</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Vitae augue</td>
+                        <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                        <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                        </td>
+                        <td class="row-item">
+                          <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- cards -->
