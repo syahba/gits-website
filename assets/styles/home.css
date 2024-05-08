@@ -70,21 +70,25 @@
 /* ========== pop up ========== */
 /* card */
 .popup {
-  /* background-color: black; */
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: none;
 }
 
 .popup-item {
   background-color: var(--white);
   position: relative;
   max-width: fit-content;
-  padding: 40px 20px 20px 20px;
+  padding: 40px;
   border-radius: 10px;
 }
 
 #btn-close {
   position: absolute;
-  top: .3em;
-  right: .3em;
+  top: .7em;
+  right: .7em;
   line-height: normal;
 }
 
@@ -118,4 +122,9 @@
   border: 1px solid var(--secondary);
   padding: 8px 15px;
   border-radius: 25px;
+  transition: all .2s;
+}
+
+.btn-order:hover {
+  background-color: var(--white);
 }
