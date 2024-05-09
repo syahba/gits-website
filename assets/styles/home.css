@@ -1,4 +1,4 @@
-/* =========== hero carousel =========== */
+/* ==================== hero carousel ==================== */
 .hero {
   display: flex;
   justify-content: space-around;
@@ -224,4 +224,171 @@
 
 .btn-order:hover {
   background-color: var(--white);
+}
+
+/* ==================== list data ==================== */
+/* list */
+.datas {
+  background-color: var(--primary);
+  flex-wrap: wrap;
+}
+
+.data-item {
+  display: flex;
+  align-items: center;
+}
+
+.data-set {
+  margin: 2rem 1.5rem;
+}
+
+.data-number {
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: .2rem;
+}
+
+.data-name {
+  font-size: .9rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.data-line {
+  background-color: rgba(255, 255, 255, 0.541);
+  width: .01em;
+  height: 3em;
+}
+
+/* ==================== card benefits ==================== */
+/* title */
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.section-heading {
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* cards */
+.benefit-container {
+  margin-top: .5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 12rem;
+  margin: .7rem;
+  border: none;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.091);
+}
+
+.card-subtitle {
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.card-text {
+  font-size: .8rem;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.fa-user-group {
+  color: var(--primary);
+}
+
+.fa-clock {
+  color: #73bc00;
+}
+
+.fa-chalkboard {
+  color: var(--secondary);
+}
+
+.fa-coins {
+  color: #fe6baa;
+}
+
+/* ==================== logo slider ==================== */
+.slider {
+  width: 70vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider::before,
+.slider::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5rem;
+}
+
+.slider::after {
+  left: 0;
+  background: linear-gradient(to left, #ffffff00, #ffffff);
+}
+
+.slider::before {
+  right: 0;
+  background: linear-gradient(to right, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+.slider-brands {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  animation: slideLeft 14s linear infinite;
+}
+
+@keyframes slideLeft {
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+.slider:hover .slider-brands {
+  animation-play-state: paused;
+}
+
+.slider-logo {
+  margin: 0 4rem;
+}
+
+.brand-icon {
+  font-size: 3rem;
+  color: #b3b3b3;
+  transition: all .3s;
+}
+
+.brand-icon:hover {
+  transform: scale(1.2);
+}
+
+/* ==================== responsive ==================== */
+@media screen and (max-width: 500px) {
+  /* ========== hero carousel ========== */
+  .collage-item {
+    max-width: 6rem;
+  }
+
+  .img-square {
+    border-radius: 5px;
+  }
 }
