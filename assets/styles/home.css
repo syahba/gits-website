@@ -288,6 +288,11 @@
   margin: .7rem;
   border: none;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.091);
+  transition: all .3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card-subtitle {
@@ -329,6 +334,7 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+  margin: 1.5rem 0;
 }
 
 .slider::before,
