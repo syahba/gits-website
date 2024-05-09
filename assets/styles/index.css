@@ -14,6 +14,7 @@
   --accent: #fa6400;
   --white: #fff;
   --neutral: #303030;
+  --disable: #e9e9e9;
 }
 
 body {
@@ -91,6 +92,31 @@ body {
 .bottom-doodle {
   bottom: 1rem;
   left: 10rem;
+}
+
+/* text style */
+.headline {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--neutral);
+}
+
+.tagline {
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0;
+}
+
+.sub-headline {
+  margin: 1.8rem 0;
+  color: var(--neutral);
+}
+
+.section-heading {
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 /* footer */
