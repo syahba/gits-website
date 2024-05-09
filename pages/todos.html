@@ -12,6 +12,7 @@
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- css style -->
   <link rel="stylesheet" href="../assets/styles/index.css">
+  <link rel="stylesheet" href="../assets/styles/todos.css">
 </head>
 
 <body>
@@ -68,13 +69,19 @@
     </section>
 
     <!-- input -->
-    <section>
-      <input type="text" id="task" placeholder="Create a task">
-      <button type="button" id="btn-task">Add</button>
+    <section class="input-section">
+      <div class="inputs">
+        <label for="task" class="task-label">What do you want to do today?</label>
+  
+        <div class="input-task">
+          <input type="text" name="task" id="task" class="task-input" placeholder="Create a task" maxlength="15">
+          <button type="button" id="btn-task" class="task-btn">Add</button>
+        </div>
+      </div>
     </section>
 
     <!-- list -->
-    <section>
+    <section class="list-section">
       <div class="list-container" id="list"></div>
     </section>
   </main>

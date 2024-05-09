@@ -23,6 +23,14 @@ body {
 }
 
 /* navbar */
+.container-fluid {
+  padding: .5rem 1.5rem;
+}
+
+.nav-link {
+  transition: all .2s;
+}
+
 .nav-link:hover {
   color: var(--primary);
   font-weight: 700;

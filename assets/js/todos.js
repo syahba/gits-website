@@ -3,9 +3,8 @@ const input = document.getElementById('task');
 const inputBtn = document.getElementById('btn-task');
 const container = document.getElementById('list');
 
-const todos = JSON.parse(localStorage.getItem('todos')); // get data from local storage
-
 window.addEventListener('DOMContentLoaded', () => {
+  const todos = JSON.parse(localStorage.getItem('todos')); // get data from local storage
   // show existing data when loaded
   if (todos) {
     todos.forEach(value => {
@@ -17,50 +16,73 @@ window.addEventListener('DOMContentLoaded', () => {
 inputBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  if (input.value && !todos.find(v => v === input.value)) {
-    const data = todos ? [...todos, input.value] : [input.value]; // existing data validation
+  if (input.value) {
+    const obj = { task: input.value, isCompleted: false };
+    let data = [obj];
+    
+    const todos = JSON.parse(localStorage.getItem('todos')); // get data from local storage
+
+    if (todos) {
+      const duplicate = todos.find(v => v.task === input.value);
+      if (duplicate) {
+        return alert('Task cannot be duplicate');
+      } else {
+        data = [...todos, obj];
+      }
+    };
+
     localStorage.setItem('todos', JSON.stringify(data)); // save new data
-
-    createTask(input.value); // create new html element
-
-    alert('Success create task');
+    createTask(obj); // create new html element
   } else {
-    alert('Task cannot be empty or duplicate'); // input data error handler
+    alert('Task cannot be empty'); // empty data error handler
   };
 });
 
 const createTask = (params) => {
   const div = document.createElement('div');
-  div.className = 'list-item';
+
+  const status = params.isCompleted ? 'fa-solid' : 'fa-regular'; // check task status
   div.innerHTML = `
-    <i class="fa-regular fa-check-square" style="color: #fa6400;" id=${params} onclick="completeTask('${params}')"></i>
-    <p class="task">${params}</p>
-    <i class="fa fa-trash" style="color: #fa6400;" onclick="deleteTask('${params}')"></i>
-    `;
+    <div class="task-item">
+      <i class="${status} fa-check-square" id=${params.task} onclick="completeTask('${params.task}')"></i>
+      <p class="task-name">${params.task}</p>
+    </div>
+    <i class="fa fa-trash" onclick="deleteTask('${params.task}')"></i>
+  `;
+  div.className = 'list-item';
 
   container.appendChild(div); // insert child to to do list
 };
 
 const deleteTask = (params) => {
-  const data = todos.filter(v => v !== params); // filter out deleted task
+  const todos = JSON.parse(localStorage.getItem('todos')); // get data from local storage
+
+  const data = todos.filter(v => v.task !== params); // filter out deleted task
   localStorage.setItem('todos', JSON.stringify(data)); // replace saved data
 
   container.innerHTML = ''; // clear container for new items
   data.forEach(value => { // loop new datas
     createTask(value);
   });
-
-  alert('Success delete task');
 };
 
 const completeTask = (params) => {
+  const todos = JSON.parse(localStorage.getItem('todos')); // get data from local storage
+  const index = todos.findIndex(v => v.task === params);
+
   const i = document.getElementById(params); // get checkbox element
 
-  if (i.parentNode.classList[1]) { // check if item completed
+  if (todos[index].isCompleted) { // check if item completed
     i.parentNode.classList.remove('checked');
     i.classList.replace('fa-solid', 'fa-regular');
+
+    todos[index].isCompleted = false;
   } else {
     i.parentNode.classList.add('checked');
     i.classList.replace('fa-regular', 'fa-solid');
+
+    todos[index].isCompleted = true;
   };
+
+  localStorage.setItem('todos', JSON.stringify(todos)); // replace saved data
 };
