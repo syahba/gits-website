@@ -9,6 +9,15 @@
   margin: .7rem 2rem;
   padding: 5px 10px;
   display: flex;
+  border: none;
+  background-color: var(--white);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.053);
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
 }
 
 .card-content {
