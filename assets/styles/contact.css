@@ -1,0 +1,141 @@
+/* =================== contact section =================== */
+.message-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+/* map */
+.map {
+  width: 30rem;
+  height: 25rem;
+  border: 0;
+}
+
+/* message */
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 2rem;
+}
+
+.input-message {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.input-item {
+  width: 25rem;
+  padding: 5px 20px;
+  border: 2px solid var(--disable);
+  border-radius: 20px;
+  transition: all .2s;
+  margin: .4rem 0;
+}
+
+.input-item:hover {
+  border: 2px solid var(--secondary);
+}
+
+.input-item:focus {
+  outline-color: var(--secondary);
+}
+
+.input-area {
+  height: 10rem;
+}
+
+.btn-submit {
+  padding: 8px 20px;
+  color: var(--white);
+  font-weight: 600;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.btn-submit:hover {
+  transform: scale(1.1);
+}
+
+/* =================== contact section =================== */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+}
+
+/* title */
+.contact-heading {
+  margin: 0;
+}
+
+.contact-subheading {
+  margin: 1rem 0;
+  max-width: 25rem;
+  text-align: center;
+}
+
+/* line */
+.contact-line {
+  background-color: var(--disable);
+  width: 40rem;
+  height: .15rem;
+  margin: 1rem 0 2rem 0;
+}
+
+/* contact icon */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: .5rem 2.5rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-right: .5rem;
+}
+
+.contact-name {
+  margin: 0;
+}
+
+/* =================== responsive =================== */
+@media screen and (max-width: 650px) {
+  /* contact */
+  .contact-line {
+    width: 15rem;
+  }  
+}
+
+@media screen and (max-width: 450px) {
+  /* map */
+  .map {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  /* message */
+  .input-item {
+    width: 15rem;
+  }
+}

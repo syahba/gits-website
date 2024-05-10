@@ -12,6 +12,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- css style -->
   <link rel="stylesheet" href="../assets/styles/index.css">
+  <link rel="stylesheet" href="../assets/styles/contact.css">
 </head>
 
 <body>
@@ -68,17 +69,51 @@
       </div>
     </section>
 
-    <!-- map location -->
-    <section class="map-section">
+    <!-- message section -->
+    <section class="message-section">
+      <!-- map -->
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0382566592057!2d106.83675797380457!3d-6.389065093601387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eba1af118f83%3A0x64cfb13db4e1d4c1!2sBimbel%20Tiki%20Taka%20-%20Kantor%20Pusat!5e0!3m2!1sen!2sid!4v1715310334603!5m2!1sen!2sid"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0382566592057!2d106.83675797380457!3d-6.389065093601387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eba1af118f83%3A0x64cfb13db4e1d4c1!2sBimbel%20Tiki%20Taka%20-%20Kantor%20Pusat!5e0!3m2!1sen!2sid!4v1715313923502!5m2!1sen!2sid"
+        class="map" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- message section -->
+      <div class="message">
+        <p class="tagline">LET'S DISCUSS</p>
+        <h3 class="section-heading">Write to Us</h3>
+
+        <div class="input-message">
+          <form action="" class="form-input" id="form-input">
+            <input type="text" class="input-item" placeholder="Jane Doe">
+            <input type="email" class="input-item" placeholder="janedoe@email.com">
+            <textarea class="input-item input-area" placeholder="Write your message"></textarea>
+          </form>
+
+          <button type="submit" class="btn-submit" id="btn-submit">Send a message</button>
+        </div>
+      </div>
     </section>
 
-    <!-- send messsage -->
-
     <!-- contact details -->
+    <section class="contact-section">
+      <div class="contact">
+        <h3 class="section-heading contact-heading">Our Contact</h3>
+        <p class="sub-headline contact-subheading">We try to be friends with our clients, so we are happy to answer your questions.</p>
+
+        <div class="contact-line"></div>
+
+        <div class="contact-container">
+          <div class="contact-item">
+            <i class="fa-solid fa-square-phone contact-icon"></i>
+            <p class="contact-name">+62812345678901</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-square-envelope contact-icon"></i>
+            <p class="contact-name">tutor@email.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -108,6 +143,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- contact page script -->
+  <script src="../assets/js/contact.js"></script>
 </body>
 
 </html>
