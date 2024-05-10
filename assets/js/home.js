@@ -1,23 +1,32 @@
 // selectors
-const btnClose = document.getElementById('btn-close');
-const card = document.getElementById('popup');
+const btnClose = document.getElementsByClassName('btn-close');
+const cards = document.getElementsByClassName('popup');
 
 // event listener for closing popup
-btnClose.addEventListener('click', () => {
-  card.style.display = 'none';
+[...btnClose].forEach(btn => {
+  btn.addEventListener('click', () => {
+    [...cards].forEach(elem => {
+      elem.style.display = 'none';
+    });
+  });
 });
 
 // open popup function for multiple buttons
 const openPopup = () => {
-  card.style = `
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    `;
+  [...cards].forEach(elem => {
+    elem.style = `
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      `;
+  });
+
 };
 
 const confirmOrder = (params) => {
-  card.style.display = 'none';
+  [...cards].forEach(elem => {
+    elem.style.display = 'none';
+  });
 
   alert(`Thank you for purchasing our ${params} Plan.`);
 };

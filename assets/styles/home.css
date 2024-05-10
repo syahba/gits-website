@@ -164,11 +164,19 @@
   border-radius: 10px;
 }
 
-#btn-close {
+.btn-close {
   position: absolute;
   top: .7em;
   right: .7em;
-  line-height: normal;
+  color: var(--neutral);
+}
+
+.btn-close:before {
+  content: "" !important;
+}
+
+.btn-close:hover {
+  cursor: pointer;
 }
 
 /* table */
