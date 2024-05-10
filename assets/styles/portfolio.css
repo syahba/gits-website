@@ -1,0 +1,57 @@
+/* ================= portfolio card ================= */
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 2rem;
+}
+
+.portfolio-item {
+  margin: .7rem 2rem;
+  padding: 5px 10px;
+  display: flex;
+}
+
+.card-content {
+  margin-bottom: 1rem;
+}
+
+/* icons */
+.portfolio-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.fa-book {
+  color: var(--primary);
+}
+
+.fa-school {
+  color: var(--secondary);
+}
+
+.fa-pen {
+  color: var(--accent);
+}
+
+/* button */
+.card-link {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.card-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* ================= responsive ================= */
+@media screen and (max-width: 500px) {
+  .portfolio-container {
+    margin: 4rem 1rem;
+  }
+  
+  .portfolio-item {
+    margin: .7rem;
+  }
+}
