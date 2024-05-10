@@ -345,10 +345,10 @@
   display: flex;
   margin: 0;
   padding: 0;
-  animation: slideLeft 14s linear infinite;
+  animation: slide 14s linear infinite;
 }
 
-@keyframes slideLeft {
+@keyframes slide {
   100% {
     transform: translateX(calc(-100% / 2));
   }
