@@ -374,6 +374,13 @@
 }
 
 /* ==================== responsive ==================== */
+@media screen and (max-width: 350px) {
+  /* ========== hero carousel ========== */
+  .collage-container {
+    padding: 10px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   /* ========== hero carousel ========== */
   .collage-item {
