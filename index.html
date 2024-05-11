@@ -1,10 +1,750 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tutor. | Home</title>
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- css style -->
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <link rel="stylesheet" href="./assets/styles/home.css">
+  <!-- font awesome cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"
+    type='text/css'>
 </head>
+
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid py-2">
+        <a class="navbar-brand logo ms-2" href="#">Tutor.</a>
+
+        <!-- responsive navbar button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/todos.html">To-Do</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero carousel -->
+    <section class="hero-carousel">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <!-- slide indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
   
+        <!-- carousel items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero">
+              <div class="hero-title">
+                <p class="tagline">100% SATISFACTION GUARANTEE</p>
+        
+                <div class="heading">
+                  <div class="star-doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-top" alt="doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-bottom" alt="doodle">
+                  </div>
+                  <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                  <img src="https://i.imgur.com/OI9i7Vk.png" class="wave-doodle" alt="doodle">
+                </div>
+        
+                <p class="sub-headline">
+                  We help you find perfect tutor for 1-on-1 lessons.
+                  <br>
+                  It is completely customized and private.
+                </p>
+                
+                <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+        
+                <div class="popup" id="popup">
+                  <div class="popup-item">
+                    <i class="fa-solid fa-x btn-close"></i>
+        
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Features</h4>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Basic</h4>
+                            <p class="text-price">$5/month</p>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Premium</h4>
+                            <p class="text-price">$15/month</p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lorem ipsum</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Consectetur adipiscing</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Suspendisse nec</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Maecenas leo</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae vel</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae augue</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                          </td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="hero-image">
+                <div class="collage-container container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/yimatNs.jpg" class="collage-item round-left" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/4X8vYjs.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/QLUm28i.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/TrwAvsM.jpg" class="collage-item round-right" alt="person">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="circle-yellow"></div>
+                <div class="circle-grey"></div>
+                <div class="circle-blue"></div>
+        
+                <img src="https://i.imgur.com/QTS52mJ.png" class="chat-doodle" alt="doodle">
+                <img src="https://i.imgur.com/Rk4AOdg.png" class="heart-doodle" alt="doodle">
+                <img src="https://i.imgur.com/v42DQWx.png" class="arrow-doodle" alt="doodle">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero">
+              <div class="hero-image">
+                <div class="collage-container container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/yimatNs.jpg" class="collage-item round-left" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/4X8vYjs.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/QLUm28i.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/TrwAvsM.jpg" class="collage-item round-right" alt="person">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="circle-yellow"></div>
+                <div class="circle-grey"></div>
+                <div class="circle-blue"></div>
+        
+                <img src="https://i.imgur.com/QTS52mJ.png" class="chat-doodle" alt="doodle">
+                <img src="https://i.imgur.com/Rk4AOdg.png" class="heart-doodle" alt="doodle">
+                <img src="https://i.imgur.com/v42DQWx.png" class="arrow-doodle" alt="doodle">
+              </div>
+  
+              <div class="hero-title">
+                <p class="tagline">100% SATISFACTION GUARANTEE</p>
+        
+                <div class="heading">
+                  <div class="star-doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-top" alt="doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-bottom" alt="doodle">
+                  </div>
+                  <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                  <img src="https://i.imgur.com/OI9i7Vk.png" class="wave-doodle" alt="doodle">
+                </div>
+        
+                <p class="sub-headline">
+                  We help you find perfect tutor for 1-on-1 lessons.
+                  <br>
+                  It is completely customized and private.
+                </p>
+                
+                <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+        
+                <div class="popup" id="popup">
+                  <div class="popup-item">
+                    <i class="fa-solid fa-x btn-close"></i>
+        
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Features</h4>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Basic</h4>
+                            <p class="text-price">$5/month</p>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Premium</h4>
+                            <p class="text-price">$15/month</p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lorem ipsum</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Consectetur adipiscing</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Suspendisse nec</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Maecenas leo</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae vel</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae augue</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                          </td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero">
+              <div class="hero-title">
+                <p class="tagline">100% SATISFACTION GUARANTEE</p>
+        
+                <div class="heading">
+                  <div class="star-doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-top" alt="doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-bottom" alt="doodle">
+                  </div>
+                  <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                  <img src="https://i.imgur.com/OI9i7Vk.png" class="wave-doodle" alt="doodle">
+                </div>
+        
+                <p class="sub-headline">
+                  We help you find perfect tutor for 1-on-1 lessons.
+                  <br>
+                  It is completely customized and private.
+                </p>
+                
+                <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+        
+                <div class="popup" id="popup">
+                  <div class="popup-item">
+                    <i class="fa-solid fa-x btn-close"></i>
+        
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Features</h4>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Basic</h4>
+                            <p class="text-price">$5/month</p>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Premium</h4>
+                            <p class="text-price">$15/month</p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lorem ipsum</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Consectetur adipiscing</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Suspendisse nec</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Maecenas leo</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae vel</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae augue</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                          </td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="hero-image">
+                <div class="collage-container container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/yimatNs.jpg" class="collage-item round-left" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/4X8vYjs.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/QLUm28i.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/TrwAvsM.jpg" class="collage-item round-right" alt="person">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="circle-yellow"></div>
+                <div class="circle-grey"></div>
+                <div class="circle-blue"></div>
+        
+                <img src="https://i.imgur.com/QTS52mJ.png" class="chat-doodle" alt="doodle">
+                <img src="https://i.imgur.com/Rk4AOdg.png" class="heart-doodle" alt="doodle">
+                <img src="https://i.imgur.com/v42DQWx.png" class="arrow-doodle" alt="doodle">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero">
+              <div class="hero-image">
+                <div class="collage-container container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/yimatNs.jpg" class="collage-item round-left" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/4X8vYjs.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <img src="https://i.imgur.com/QLUm28i.jpg" class="collage-item img-square" alt="person">
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/TrwAvsM.jpg" class="collage-item round-right" alt="person">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="circle-yellow"></div>
+                <div class="circle-grey"></div>
+                <div class="circle-blue"></div>
+        
+                <img src="https://i.imgur.com/QTS52mJ.png" class="chat-doodle" alt="doodle">
+                <img src="https://i.imgur.com/Rk4AOdg.png" class="heart-doodle" alt="doodle">
+                <img src="https://i.imgur.com/v42DQWx.png" class="arrow-doodle" alt="doodle">
+              </div>
+  
+              <div class="hero-title">
+                <p class="tagline">100% SATISFACTION GUARANTEE</p>
+        
+                <div class="heading">
+                  <div class="star-doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-top" alt="doodle">
+                    <img src="https://i.imgur.com/jUYFBSs.png" class="star-doodle-bottom" alt="doodle">
+                  </div>
+                  <h1 class="headline">Find Your <br> Perfect Tutor</h1>
+                  <img src="https://i.imgur.com/OI9i7Vk.png" class="wave-doodle" alt="doodle">
+                </div>
+        
+                <p class="sub-headline">
+                  We help you find perfect tutor for 1-on-1 lessons.
+                  <br>
+                  It is completely customized and private.
+                </p>
+                
+                <button type="button" class="btn-cta" onclick="openPopup()">Order now</button>
+        
+                <div class="popup" id="popup">
+                  <div class="popup-item">
+                    <i class="fa-solid fa-x btn-close"></i>
+        
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Features</h4>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Basic</h4>
+                            <p class="text-price">$5/month</p>
+                          </th>
+                          <th scope="col" class="col-header">
+                            <h4 class="text-col">Premium</h4>
+                            <p class="text-price">$15/month</p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lorem ipsum</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Consectetur adipiscing</td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Suspendisse nec</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Maecenas leo</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae vel</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td>Vitae augue</td>
+                          <td class="row-item"><i class="fa-solid fa-xmark"></i></td>
+                          <td class="row-item"><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Basic')">Get plan</button>
+                          </td>
+                          <td class="row-item">
+                            <button type="button" class="btn-order" onclick="confirmOrder('Premium')">Get plan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- next and previous button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- list data -->
+    <section class="list-data">
+      <div class="datas d-flex justify-content-evenly align-items-center">
+        <!-- data groups -->
+        <div class="data-item">
+          <div class="data-set">
+            <h4 class="data-number">870</h4>
+            <p class="data-name">Expert tutors</p>
+          </div>
+        </div>
+        <div class="data-item">
+          <div class="data-line"></div>
+          <div class="data-set">
+            <h4 class="data-number">20,000+</h4>
+            <p class="data-name">Hours tutored</p>
+          </div>
+        </div>
+        <div class="data-item">
+          <div class="data-line"></div>
+          <div class="data-set">
+            <h4 class="data-number">298</h4>
+            <p class="data-name">Subjects and courses</p>
+          </div>
+        </div>
+        <div class="data-item">
+          <div class="data-line"></div>
+          <div class="data-set">
+            <h4 class="data-number">72,920</h4>
+            <p class="data-name">Active students</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- benefits -->
+    <section class="benefit-card">
+      <div class="benefits sections">
+        <!-- heading -->
+        <p class="tagline">WHY CHOOSE US</p>
+        <h3 class="section-heading">Benefits of online <br> tutoring services with us</h3>
+
+        <!-- benefit cards -->
+        <div class="benefit-container d-flex">
+          <div class="card" >
+            <div class="card-body">
+              <i class="fa-solid fa-user-group benefit-icon"></i>
+              <h6 class="card-subtitle mb-2">One-on-one Teaching</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <i class="fa-solid fa-clock benefit-icon"></i>
+              <h6 class="card-subtitle mb-2">24/7 Tutor Availability</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <i class="fa-solid fa-chalkboard benefit-icon"></i>
+              <h6 class="card-subtitle mb-2">Interactive Whiteboard</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <i class="fa-solid fa-coins benefit-icon"></i>
+              <h6 class="card-subtitle mb-2">Affordable Prices</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery-picture">
+      <div class="gallery sections">
+        <!-- heading -->
+        <p class="tagline">WHAT WE DO</p>
+        <h3 class="section-heading">Collections of our <br> 4+ years work</h3>
+
+        <div class="gallery-collage">
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1580894732930-0babd100d356?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1605711285791-0219e80e43a3?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1629360057380-18b15b42e650?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1532619187608-e5375cab36aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/flagged/photo-1564445477052-8a3787406bbf?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1629360035258-2ccb13aa3679?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1492462543947-040389c4a66c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-img" loading="lazy" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="teaching">
+          </div>
+        </div>
+
+        <div class="gallery-scroll" id="gallery-scroll">
+          <div class="scroll-item">
+            <i class="fa-solid fa-x btn-close-scroll" id="btn-close-scroll"></i>
+
+            <img class="scroll-img" id="scroll-img">
+            
+            <div class="scroll-control">
+              <i class="fa-solid fa-angle-left btn-scroll" id="btn-left"></i>
+              <i class="fa-solid fa-angle-right btn-scroll" id="btn-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partners -->
+    <section class="partner-list">
+      <div class="partners sections">
+        <!-- heading -->
+        <p class="tagline">OUR COLLABORATORS</p>
+        <h3 class="section-heading">Companies that partners <br> with us</h3>
+
+        <!-- logo slider -->
+        <div class="slider">
+          <ul class="slider-brands">
+            <li class="slider-logo"><i class="fa-brands fa-google brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-aws brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-squarespace brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-stack-overflow brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-behance brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-apple brand-icon"></i></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-android brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-facebook brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-linkedin brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-steam-symbol brand-icon"></i></li>
+
+            <li class="slider-logo"><i class="fa-brands fa-google brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-aws brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-squarespace brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-stack-overflow brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-behance brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-apple brand-icon"></i></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-android brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-facebook brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-linkedin brand-icon"></i></li>
+            <li class="slider-logo"><i class="fa-brands fa-steam-symbol brand-icon"></i></li>
+          </ul>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="d-flex flex-column align-items-center gap-3 footer-item">
+      <a class="navbar-brand logo" href="#">Tutor.</a>
+  
+      <div class="d-flex justify-content-center align-items-center gap-3">
+        <a href="https://www.instagram.com/ksyahba" target="_blank">
+          <i class="fa-brands fa-instagram icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/syahba/" target="_blank">
+          <i class="fa-brands fa-linkedin icon"></i>
+        </a>
+        <a href="https://github.com/syahba/" target="_blank">
+          <i class="fa-brands fa-github icon"></i>
+        </a>
+      </div>
+  
+      <small>© 2024 Tutor.</small>
+    </div>
+
+    <div class="footer-circle"></div>
+    <div class="footer-line"></div>
+  </footer>
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- home page script -->
+  <script src="./assets/js/home.js"></script>
 </body>
+
 </html>

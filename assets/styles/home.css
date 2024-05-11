@@ -1,0 +1,541 @@
+/* ==================== hero carousel ==================== */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+/* hero-title */
+.heading {
+  max-width: 23rem;
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+/* title accessories */
+.star-doodle {
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  position: absolute;
+  right: .5em;
+  top: 1.8em;
+}
+
+.star-doodle-top {
+  max-width: 2.3rem;
+  rotate: -10deg;
+}
+
+.star-doodle-bottom {
+  max-width: 1.8rem;
+  rotate: 40deg;
+}
+
+.wave-doodle {
+  max-width: 4rem;
+  position: absolute;
+  bottom: -2em;
+  right: 6.5em;
+}
+
+/* cta */
+.btn-cta {
+  font-size: .8rem;
+  font-weight: 700;
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  padding: 10px 24px;
+  border-radius: 20px;
+  transition: all .2s;
+  color: var(--neutral);
+}
+
+.btn-cta:hover {
+  background-color: var(--white);
+}
+
+/* hero image */
+.hero-image {
+  position: relative;
+}
+
+.collage-container {
+  padding: 20px 40px;
+}
+
+.collage-container .row .col {
+  padding: 0;
+  margin: .6rem;
+}
+
+.collage-item {
+  max-width: 10rem;
+}
+
+.img-square {
+  border-radius: 10px;
+}
+
+.round-left {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.round-right {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* image accesories */
+.circle-yellow {
+  background-color: #ffe69a;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  position: absolute;
+  top: -.5em;
+  right: -1em;
+  z-index: -1;
+}
+
+.circle-grey {
+  background-color: var(--disable);
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 9em;
+  right: -2em;
+}
+
+.circle-blue {
+  background-color: #c1f6ff;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: -.5em;
+  z-index: -1;
+}
+
+.chat-doodle {
+  max-width: 3rem;
+  position: absolute;
+  top: -.5em;
+  right: -1em;
+}
+
+.heart-doodle {
+  max-width: 2rem;
+  position: absolute;
+  top: 8.3em;
+  right: -1em;
+  rotate: -15deg;
+}
+
+.arrow-doodle {
+  max-width: 3.5rem;
+  position: absolute;
+  bottom: .5em;
+  left: -1.5em;
+  transform: scaleX(-1);
+  rotate: -25deg;
+}
+
+/* ========== pop up ========== */
+/* card */
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: none;
+}
+
+.popup-item {
+  background-color: var(--white);
+  position: relative;
+  max-width: fit-content;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.btn-close {
+  position: absolute;
+  top: .7em;
+  right: .7em;
+  color: var(--neutral);
+}
+
+.btn-close:before {
+  content: "" !important;
+}
+
+.btn-close:hover {
+  cursor: pointer;
+}
+
+/* table */
+.table {
+  max-width: 30rem;
+  margin: 0;
+}
+
+.col-header {
+  text-align: center;
+  color: var(--neutral);
+}
+
+.row-item {
+  text-align: center;
+}
+
+.fa-check {
+  color: var(--primary);
+}
+
+.fa-xmark {
+  color: #bbbbbb;
+}
+
+.btn-order {
+  background-color: var(--secondary);
+  font-size: .8rem;
+  font-weight: 700;
+  border: 1px solid var(--secondary);
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: all .2s;
+}
+
+.btn-order:hover {
+  background-color: var(--white);
+}
+
+/* ==================== list data ==================== */
+/* list */
+.datas {
+  background-color: var(--primary);
+  flex-wrap: wrap;
+}
+
+.data-item {
+  display: flex;
+  align-items: center;
+}
+
+.data-set {
+  margin: 2rem 1.5rem;
+}
+
+.data-number {
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: .2rem;
+}
+
+.data-name {
+  font-size: .9rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.data-line {
+  background-color: rgba(255, 255, 255, 0.541);
+  width: .01em;
+  height: 3em;
+}
+
+/* ==================== card benefits ==================== */
+/* title */
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+/* cards */
+.benefit-container {
+  margin-top: .5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 12rem;
+  margin: .7rem;
+  border: none;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.091);
+  transition: all .3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.card-text {
+  font-size: .8rem;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.fa-user-group {
+  color: var(--primary);
+}
+
+.fa-clock {
+  color: #73bc00;
+}
+
+.fa-chalkboard {
+  color: var(--secondary);
+}
+
+.fa-coins {
+  color: #fe6baa;
+}
+
+/* ==================== gallery ==================== */
+/* collage */
+.gallery-collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 4rem;
+}
+
+.gallery-img {
+  max-width: 15rem;
+  margin: .2rem;
+  border-radius: 5px;
+  opacity: 40%;
+  transition: all .4s;
+}
+
+.gallery-img:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+/* scroll */
+.gallery-scroll {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: none;
+}
+
+.scroll-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  width: fit-content;
+  padding: 35px 30px 15px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.scroll-img {
+  max-width: 30rem;
+  border-radius: 10px;
+}
+
+.scroll-control {
+  margin-top: 1rem;
+}
+
+.btn-scroll {
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin: 0 1rem;
+  transition: all .3s;
+}
+
+.btn-scroll:hover {
+  transform: scale(1.13);
+  cursor: pointer;
+}
+
+.btn-close-scroll {
+  position: absolute;
+  top: .7rem;
+  right: .8rem;
+}
+
+.btn-close-scroll:hover {
+  cursor: pointer;
+}
+
+/* ==================== logo slider ==================== */
+.slider {
+  width: 70vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.slider::before,
+.slider::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5rem;
+}
+
+.slider::after {
+  left: 0;
+  background: linear-gradient(to left, #ffffff00, #ffffff);
+}
+
+.slider::before {
+  right: 0;
+  background: linear-gradient(to right, #ffffff00, #ffffff);
+  z-index: 2;
+}
+
+.slider-brands {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 180vw;
+  position: absolute;
+  left: 0;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider:hover .slider-brands {
+  animation-play-state: paused;
+}
+
+.slider-logo {
+  margin: 0 4rem;
+}
+
+.brand-icon {
+  font-size: 3rem;
+  color: #b3b3b3;
+  transition: all .3s;
+}
+
+.brand-icon:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/* ==================== responsive ==================== */
+@media screen and (max-width: 376px) {
+
+  /* ========== hero carousel ========== */
+  .collage-container {
+    padding: 10px;
+  }
+
+  /* ========== list data ========== */
+  .data-set {
+    margin: 1.5rem 1rem;
+  }
+
+  .data-name {
+    font-size: .7rem;
+  }
+
+  /* ========== scroll ========== */
+  .scroll-item {
+    padding: 20px 15px 12px 15px;
+    border-radius: 5px;
+  }
+
+  .scroll-img {
+    max-width: 16rem;
+    border-radius: 5px;
+  }
+
+  .scroll-control {
+    margin-top: .6rem;
+  }
+
+  .btn-scroll {
+    font-size: .9rem;
+    padding: 7px 10px;
+  }
+
+  .btn-close-scroll {
+    top: .4rem;
+    right: .45rem;
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* ========== hero carousel ========== */
+  .collage-item {
+    max-width: 6rem;
+  }
+
+  .img-square {
+    border-radius: 5px;
+  }
+
+  /* ========== slider ========== */
+  .slider-brands {
+    animation: slide 10s linear infinite;
+  }
+}
+
+@media screen and (max-width: 624px) and (min-width: 377px) {
+
+  /* ========== scroll ========== */
+  .scroll-item {
+    padding: 25px 20px 12px 20px;
+    border-radius: 5px;
+  }
+
+  .scroll-img {
+    max-width: 22rem;
+    border-radius: 5px;
+  }
+
+  .scroll-control {
+    margin-top: .6rem;
+  }
+
+  .btn-scroll {
+    font-size: .9rem;
+    padding: 7px 10px;
+  }
+
+  .btn-close-scroll {
+    top: .4rem;
+    right: .45rem;
+    font-size: .7rem;
+  }
+}
