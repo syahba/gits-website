@@ -38,26 +38,26 @@ inputBtn.addEventListener('click', (e) => {
   };
 });
 
-const createTask = (params) => {
+const createTask = (todo) => {
   const div = document.createElement('div');
 
-  const status = params.isCompleted ? 'fa-solid' : 'fa-regular'; // check task status
+  const status = todo.isCompleted ? 'fa-solid' : 'fa-regular'; // check task status
   div.innerHTML = `
     <div class="task-item">
-      <i class="${status} fa-check-square" id=${params.task} onclick="completeTask('${params.task}')"></i>
-      <p class="task-name">${params.task}</p>
+      <i class="${status} fa-check-square" id=${todo.task} onclick="completeTask('${todo.task}')"></i>
+      <p class="task-name">${todo.task}</p>
     </div>
-    <i class="fa fa-trash" onclick="deleteTask('${params.task}')"></i>
+    <i class="fa fa-trash" onclick="deleteTask('${todo.task}')"></i>
   `;
   div.className = 'list-item';
 
   container.appendChild(div); // insert child to to do list
 };
 
-const deleteTask = (params) => {
+const deleteTask = (task) => {
   const todos = JSON.parse(localStorage.getItem('todos')); // get data from local storage
 
-  const data = todos.filter(v => v.task !== params); // filter out deleted task
+  const data = todos.filter(v => v.task !== task); // filter out deleted task
   localStorage.setItem('todos', JSON.stringify(data)); // replace saved data
 
   container.innerHTML = ''; // clear container for new items
@@ -66,11 +66,11 @@ const deleteTask = (params) => {
   });
 };
 
-const completeTask = (params) => {
+const completeTask = (task) => {
   const todos = JSON.parse(localStorage.getItem('todos')); // get data from local storage
-  const index = todos.findIndex(v => v.task === params);
+  const index = todos.findIndex(v => v.task === task);
 
-  const i = document.getElementById(params); // get checkbox element
+  const i = document.getElementById(task); // get checkbox element
 
   if (todos[index].isCompleted) { // check if item completed
     i.parentNode.classList.remove('checked');
