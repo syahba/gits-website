@@ -324,7 +324,7 @@
   margin: .2rem;
   border-radius: 5px;
   opacity: 40%;
-  transition: all .5s;
+  transition: all .4s;
 }
 
 .gallery-img:hover {
@@ -419,12 +419,15 @@
   display: flex;
   margin: 0;
   padding: 0;
-  animation: slide 14s linear infinite;
+  width: 180vw;
+  position: absolute;
+  left: 0;
+  animation: slide 30s linear infinite;
 }
 
 @keyframes slide {
   100% {
-    transform: translateX(calc(-100% / 2));
+    transform: translateX(-100%);
   }
 }
 
@@ -443,28 +446,56 @@
 }
 
 .brand-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
   cursor: pointer;
 }
 
 /* ==================== responsive ==================== */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 376px) {
+
   /* ========== hero carousel ========== */
   .collage-container {
     padding: 10px;
   }
 
-  /* ========== list data ========== */  
+  /* ========== list data ========== */
   .data-set {
     margin: 1.5rem 1rem;
   }
-  
+
   .data-name {
+    font-size: .7rem;
+  }
+
+  /* ========== scroll ========== */
+  .scroll-item {
+    padding: 20px 15px 12px 15px;
+    border-radius: 5px;
+  }
+
+  .scroll-img {
+    max-width: 16rem;
+    border-radius: 5px;
+  }
+
+  .scroll-control {
+    margin-top: .6rem;
+  }
+
+  .btn-scroll {
+    font-size: .9rem;
+    padding: 7px 10px;
+  }
+
+  .btn-close-scroll {
+    top: .4rem;
+    right: .45rem;
     font-size: .7rem;
   }
 }
 
 @media screen and (max-width: 500px) {
+
   /* ========== hero carousel ========== */
   .collage-item {
     max-width: 6rem;
@@ -472,5 +503,39 @@
 
   .img-square {
     border-radius: 5px;
+  }
+
+  /* ========== slider ========== */
+  .slider-brands {
+    animation: slide 10s linear infinite;
+  }
+}
+
+@media screen and (max-width: 624px) and (min-width: 377px) {
+
+  /* ========== scroll ========== */
+  .scroll-item {
+    padding: 25px 20px 12px 20px;
+    border-radius: 5px;
+  }
+
+  .scroll-img {
+    max-width: 22rem;
+    border-radius: 5px;
+  }
+
+  .scroll-control {
+    margin-top: .6rem;
+  }
+
+  .btn-scroll {
+    font-size: .9rem;
+    padding: 7px 10px;
+  }
+
+  .btn-close-scroll {
+    top: .4rem;
+    right: .45rem;
+    font-size: .7rem;
   }
 }
